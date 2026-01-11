@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Henrique | Dev & Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'nu-purple': '#820AD1',
+                        'nu-dark': '#111111',
+                        'nu-gray': '#F5F5F5',
+                        'card-bg': '#191919'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Efeito de brilho roxo sutil */
+        .glow-text {
+            text-shadow: 0 0 20px rgba(130, 10, 209, 0.5);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #a55eea, #820AD1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-nu-dark text-white antialiased selection:bg-nu-purple selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-nu-dark/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-xl tracking-tighter">
+                    MH<span class="text-nu-purple">.</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-nu-purple transition-colors px-3 py-2 rounded-md text-sm font-medium">Início</a>
+                        <a href="#sobre" class="hover:text-nu-purple transition-colors px-3 py-2 rounded-md text-sm font-medium">Sobre</a>
+                        <a href="#projetos" class="hover:text-nu-purple transition-colors px-3 py-2 rounded-md text-sm font-medium">Projetos</a>
+                        <a href="#experiencia" class="hover:text-nu-purple transition-colors px-3 py-2 rounded-md text-sm font-medium">Jornada</a>
+                        <a href="#contato" class="bg-nu-purple hover:bg-purple-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-all">Contato</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button icon would go here -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left space-y-6">
+                <div class="inline-block px-3 py-1 rounded-full bg-purple-900/30 border border-purple-500/30 text-purple-300 text-sm font-semibold mb-2">
+                    🚀 Disponível para Estágio
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    Olá, sou <br>
+                    <span class="gradient-text">Matheus Henrique</span>
+                </h1>
+                <p class="text-xl text-gray-400 max-w-lg mx-auto md:mx-0">
+                    Estudante de Ciência da Computação em busca de estágio na área de  
+                    <span class="text-white font-semibold">Back e Dados</span> e grande interesse em 
+                    <span class="text-white font-semibold">Inteligência Artificial</span>.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                    <a href="#projetos" class="px-8 py-3 bg-white text-nu-dark font-bold rounded-lg hover:bg-gray-200 transition-colors">
+                        Ver Projetos
+                    </a>
+                    <a href="https://github.com/mhsilvaworks" target="_blank" class="px-8 py-3 border border-gray-600 text-white font-bold rounded-lg hover:border-nu-purple hover:text-nu-purple transition-colors flex items-center justify-center gap-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Tech Stack Animation / Visual -->
+            <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center relative">
+                <div class="absolute w-72 h-72 bg-nu-purple/20 rounded-full blur-3xl"></div>
+                <div class="grid grid-cols-2 gap-6 relative z-10">
+                    <div class="p-6 bg-card-bg border border-gray-800 rounded-2xl flex flex-col items-center hover:border-nu-purple transition-colors duration-300 transform hover:-translate-y-1">
+                        <i class="fab fa-python text-5xl text-yellow-400 mb-3"></i>
+                        <span class="font-semibold">Python</span>
+                    </div>
+                    <div class="p-6 bg-card-bg border border-gray-800 rounded-2xl flex flex-col items-center hover:border-nu-purple transition-colors duration-300 transform hover:-translate-y-1 mt-8">
+                        <i class="fas fa-database text-5xl text-blue-400 mb-3"></i>
+                        <span class="font-semibold">Data Science</span>
+                    </div>
+                    <div class="p-6 bg-card-bg border border-gray-800 rounded-2xl flex flex-col items-center hover:border-nu-purple transition-colors duration-300 transform hover:-translate-y-1">
+                        <i class="fas fa-brain text-5xl text-pink-500 mb-3"></i>
+                        <span class="font-semibold">AI / ML</span>
+                    </div>
+                    <div class="p-6 bg-card-bg border border-gray-800 rounded-2xl flex flex-col items-center hover:border-nu-purple transition-colors duration-300 transform hover:-translate-y-1 mt-8">
+                        <i class="fas fa-code text-5xl text-green-400 mb-3"></i>
+                        <span class="font-semibold">Back-end</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section (The Highlight) -->
+    <section id="projetos" class="py-20 bg-nu-dark">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+                <span class="text-nu-purple">#</span> Projetos em Destaque
+            </h2>
+
+            <!-- Featured Project -->
+            <div class="bg-card-bg rounded-2xl border border-gray-800 overflow-hidden hover:border-nu-purple/50 transition-all duration-300 mb-12 shadow-2xl shadow-purple-900/10">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <div class="text-nu-purple font-bold tracking-wider text-sm mb-2 uppercase">Iniciação Científica (FAP-DF)</div>
+                        <h3 class="text-3xl font-bold mb-4">IA Preditiva para Mobilidade Urbana</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Estou desenvolvendo um modelo de Inteligência Artificial capaz de analisar grandes volumes de dados de bilhetagem do DF para prever a lotação de ônibus. O projeto ajuda a otimizar rotas e reduzir o tempo de espera dos passageiros.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-xs text-blue-300">Python</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-xs text-yellow-300">Pandas</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-xs text-green-300">API</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-xs text-purple-300">Big Data</span>
+                        </div>
+                        <div class="flex gap-4">
+                            
+                        </div>
+                    </div>
+                    <!-- Visual Representation of Data/Traffic -->
+                    <div class="bg-gradient-to-br from-gray-900 to-gray-800 p-8 flex items-center justify-center relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558227917-2900b9552b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-40 mix-blend-overlay group-hover:scale-105 transition-transform duration-700"></div>
+                        <div class="relative z-10 bg-black/60 p-6 rounded-xl border border-gray-700 backdrop-blur-sm shadow-2xl">
+                            <div class="flex items-center gap-3 mb-3 border-b border-gray-600 pb-2">
+                                <i class="fas fa-chart-line text-green-400"></i>
+                                <span class="font-mono text-sm">Prediction.py</span>
+                            </div>
+                            <div class="font-mono text-xs text-gray-300 space-y-1 overflow-x-hidden">
+                                <p><span class="text-purple-400">import</span> pandas <span class="text-purple-400">as</span> pd</p>
+                                <p><span class="text-purple-400">import</span> joblib</p>
+                                <p><span class="text-purple-400">import</span> matplotlib.pyplot <span class="text-purple-400">as</span> plt</p>
+                                <p>&nbsp;</p>
+                                <p class="text-gray-500"># 1. Carregar a IA treinada</p>
+                                <p><span class="text-purple-400">try</span>:</p>
+                                <p>&nbsp;&nbsp;modelo = joblib.load(<span class="text-green-400">'modelo_ia_recanto.pkl'</span>)</p>
+                                <p>&nbsp;&nbsp;<span class="text-yellow-300">print</span>(<span class="text-green-400">"1. IA carregada com sucesso."</span>)</p>
+                                <p><span class="text-purple-400">except</span>:</p>
+                                <p>&nbsp;&nbsp;<span class="text-yellow-300">print</span>(<span class="text-red-400">"ERRO: Arquivo não encontrado."</span>)</p>
+                                <p>&nbsp;&nbsp;exit()</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects Grid -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- G-IMOB Project -->
+                <div class="bg-card-bg p-8 rounded-2xl border border-gray-800 hover:border-gray-600 transition-colors md:col-span-2 lg:col-span-1">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fas fa-building text-3xl text-nu-purple"></i>
+                        <a href="https://github.com/mhsilvaworks/Projeto_G-Imob" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Projeto G-Imob</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Sistema completo para gestão imobiliária. Solução focada em organização de propriedades, contratos e clientes, demonstrando habilidades em modelagem de dados e backend.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Python</span>
+                        <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Back-end</span>
+                        <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Gestão</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future project to keep grid balanced if needed, or remove if you want only 1 -->
+                <div class="border border-gray-800 rounded-2xl p-8 flex flex-col justify-center items-center text-center text-gray-500 hover:border-gray-600 transition-colors border-dashed">
+                    <i class="fas fa-plus-circle text-3xl mb-3 opacity-50"></i>
+                    <h3 class="font-bold text-sm">Em breve</h3>
+                    <p class="text-xs mt-1">Desenvolvendo novas soluções...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey / Timeline Section -->
+    <section id="experiencia" class="py-20 bg-[#0f0f0f]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">Minha Jornada</h2>
+            
+            <div class="relative border-l border-gray-700 ml-4 md:ml-0 md:pl-8 space-y-12">
+                
+                <!-- Item 1: OBI (New) -->
+                <div class="relative pl-8 md:pl-0">
+                    <span class="absolute -left-[5px] top-0 md:-left-[41px] h-3 w-3 rounded-full bg-nu-purple ring-4 ring-gray-900"></span>
+                    <div class="flex flex-col sm:flex-row justify-between mb-1">
+                        <h3 class="text-xl font-bold text-white">Fase Estadual da OBI</h3>
+                        <span class="text-sm text-nu-purple font-mono">Ago 2025</span>
+                    </div>
+                    <p class="text-gray-400 italic mb-2">Olimpíada Brasileira de Informática</p>
+                    <p class="text-gray-300 text-sm">
+                        Classificado para a fase estadual. Estudei de forma totalmente autodidata, o que solidificou profundamente minha base em lógica de programação e algoritmos complexos.
+                    </p>
+                </div>
+
+                <!-- Item 2: Pesquisador (Existing) -->
+                <div class="relative pl-8 md:pl-0">
+                    <span class="absolute -left-[5px] top-0 md:-left-[41px] h-3 w-3 rounded-full bg-gray-600 ring-4 ring-gray-900"></span>
+                    <div class="flex flex-col sm:flex-row justify-between mb-1">
+                        <h3 class="text-xl font-bold text-white">Pesquisador Bolsista (Iniciação Científica)</h3>
+                        <span class="text-sm text-gray-500 font-mono">Ago 2025 - Atual</span>
+                    </div>
+                    <p class="text-gray-400 italic mb-2">FAP-DF (Fundação de Apoio à Pesquisa)</p>
+                    <p class="text-gray-300 text-sm">
+                        Lidero o desenvolvimento técnico de uma solução de IA para prever lotação no transporte público. Responsável pela coleta de dados, limpeza e treinamento do modelo.
+                    </p>
+                </div>
+
+                <!-- Item 3: Marketing (Existing) -->
+                <div class="relative pl-8 md:pl-0">
+                    <span class="absolute -left-[5px] top-0 md:-left-[41px] h-3 w-3 rounded-full bg-gray-600 ring-4 ring-gray-900"></span>
+                    <div class="flex flex-col sm:flex-row justify-between mb-1">
+                        <h3 class="text-xl font-bold text-white">Coord. Marketing e palestras</h3>
+                        <span class="text-sm text-gray-500 font-mono">Jun 2025 - Atual</span>
+                    </div>
+                    <p class="text-gray-400 italic mb-2">Atlética Cybernética</p>
+                    <p class="text-gray-300 text-sm">
+                        Desenvolvimento de soft skills, liderança e gestão de crises. Organização de eventos para fomentar networking entre estudantes e mercado.
+                    </p>
+                </div>
+
+                <!-- Item 4: Ciência da Comp. (Existing) -->
+                <div class="relative pl-8 md:pl-0">
+                    <span class="absolute -left-[5px] top-0 md:-left-[41px] h-3 w-3 rounded-full bg-gray-600 ring-4 ring-gray-900"></span>
+                    <div class="flex flex-col sm:flex-row justify-between mb-1">
+                        <h3 class="text-xl font-bold text-white">Ciência da Computação</h3>
+                        <span class="text-sm text-gray-500 font-mono">2025 - 2029</span>
+                    </div>
+                    <p class="text-gray-400 italic mb-2">CEUB - Centro Universitário de Brasília</p>
+                    <p class="text-gray-300 text-sm">
+                        Foco em Algoritmos, Estrutura de Dados e Inteligência Artificial.
+                    </p>
+                </div>
+
+                <!-- Item 5: Aprovação Federal (New) -->
+                <div class="relative pl-8 md:pl-0">
+                    <span class="absolute -left-[5px] top-0 md:-left-[41px] h-3 w-3 rounded-full bg-gray-600 ring-4 ring-gray-900"></span>
+                    <div class="flex flex-col sm:flex-row justify-between mb-1">
+                        <h3 class="text-xl font-bold text-white">Decisão Estratégica Acadêmica</h3>
+                        <span class="text-sm text-gray-500 font-mono">2024</span>
+                    </div>
+                    <p class="text-gray-400 italic mb-2">Aprovação em Universidade Federal</p>
+                    <p class="text-gray-300 text-sm">
+                        Aprovado na Federal, mas optei estrategicamente pelo CEUB, buscando um alinhamento mais ágil com as demandas práticas do mercado e infraestrutura tecnológica.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <section id="contato" class="py-20 bg-nu-dark border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Vamos construir o futuro?</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                Estou pronto para atuar como estagiário e trazer resultados reais com código e dados.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:matheusdra2003@gmail.com" class="px-8 py-4 bg-nu-purple text-white font-bold rounded-lg hover:bg-purple-700 transition-all shadow-lg shadow-purple-900/50 flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope"></i> Enviar E-mail
+                </a>
+                <a href="https://www.linkedin.com/in/matheus-h-slv" target="_blank" class="px-8 py-4 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-700 transition-all border border-gray-700 flex items-center justify-center gap-2">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="CV_Matheus_Henrique.pdf" download class="px-8 py-4 bg-transparent border border-gray-600 text-gray-300 font-bold rounded-lg hover:text-white hover:border-white transition-all flex items-center justify-center gap-2">
+                    <i class="fas fa-file-download"></i> Baixar Currículo
+                </a>
+            </div>
+            
+            <div class="mt-16 text-gray-600 text-sm">
+                <p>&copy; 2026 Matheus Henrique.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll para links internos (caso o CSS scroll-smooth não pegue em algum browser antigo)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
